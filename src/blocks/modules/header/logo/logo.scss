@@ -1,0 +1,22 @@
+.logo {
+  width: 100px;
+  display: block;
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 1199.98px) {
+  .logo {
+    width: 70px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .logo {
+    width: 60px;
+  }
+}

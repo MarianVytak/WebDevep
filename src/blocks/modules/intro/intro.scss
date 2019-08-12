@@ -1,0 +1,36 @@
+.intro {
+  padding: 230px 0 110px;
+  background-image: url('../../../img/intro/intro-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro__title {
+  padding: 30px 0;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.intro__btn {
+  display: flex;
+  justify-content: center;
+  .btn {
+    color: $black;
+  }
+}
+
+@import "receive/receive";
+
+
+
+@media (max-width: 767.98px) {
+  .intro {
+    padding: 130px 0 50px;
+  }
+  .intro__title {
+    font-size: 24px;
+  }
+}

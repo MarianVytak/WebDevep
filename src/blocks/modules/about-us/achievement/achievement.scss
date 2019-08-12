@@ -1,0 +1,40 @@
+.achievement__item_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement__item_icon {
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.achievement__item_counter {
+  font-family: 'Akrobat-Black', sans-serif;
+  font-size: 100px;
+  color: $blue;
+}
+
+.achievement__item_label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* ## Slider Achievement
+====================*/
+.achievement {
+  .slick-dots {
+    bottom: -60px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .achievement {
+    .slick-dots {
+      bottom: -40px;
+    }
+  }
+}

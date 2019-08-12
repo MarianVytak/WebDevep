@@ -1,0 +1,50 @@
+.hamburger {
+  display: none;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  &.hamburger-active .hamburger-line:nth-child(1) {
+    transform: translate(0,-50%);
+    opacity: 0;
+  }
+  &.hamburger-active .hamburger-line:nth-child(4) {
+    transform: translate(0,-50%);
+    opacity: 0;
+  }
+  &.hamburger-active .hamburger-line:nth-child(2) {
+    transform: translate(0,-50%) rotate(45deg);
+  }
+  &.hamburger-active .hamburger-line:nth-child(3) {
+    transform: translate(0,-50%) rotate(-45deg);
+  }
+}
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: #fff;
+  transition: .5s;
+  &:nth-child(1) {
+    width: 15px;
+    transform: translate(0,-50%) translateY(-10px);
+    transition: .1s;
+  }
+  &:nth-child(4 ) {
+    width: 15px;
+    transform: translate(0,-50%) translateY(10px);
+    transition: .1s;
+  }
+}
+
+
+
+@media (max-width: 1199.98px) {
+  .hamburger {
+    display: block;
+  }
+}

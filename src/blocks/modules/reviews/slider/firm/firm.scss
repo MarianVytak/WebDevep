@@ -1,0 +1,36 @@
+.firm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 1px;
+    background-color: $grey;
+  }
+}
+
+.firm__logo {
+  margin-right: 10px;
+}
+
+.firm__content {}
+
+.firm__title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.firm__link {
+  color: $blue;
+  text-decoration: underline;
+  &:hover {
+    color: darken($blue, 15);
+  }
+}

@@ -1,0 +1,35 @@
+.reviews {
+  padding-top: 80px;
+  background-color: #f7f8fa;
+  .title-bg-text {
+    font-size: 120px;
+  }
+  .title-2 {
+    text-transform: initial;
+  }
+}
+
+
+
+@media (max-width: 1199.98px) {
+  .reviews {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .reviews {
+    padding-top: 20px;
+    background-color: $white;
+  }
+  .reviews__item {
+    min-height: auto;
+    padding-bottom: 0;
+    .firm {
+      position: inherit;
+      margin-top: 30px;
+    }
+  }
+}
+
+@import "slider/slider";

@@ -1,0 +1,20 @@
+.about-us {
+  padding: 100px 0;
+}
+
+.about-us__achievement {
+  margin-top: 50px;
+}
+
+@import "achievement/achievement";
+
+
+
+@media (max-width: 1199.98px) {
+  .about-us {
+    padding: 20px 0 70px;
+  }
+  .about-us__achievement {
+    margin-top: 0;
+  }
+}

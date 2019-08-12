@@ -1,0 +1,101 @@
+.reviews__slider {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.reviews__item {
+  position: relative;
+  min-height: 500px;
+  padding: 45px 25px 124px;
+  border: 2px solid $black;
+  box-sizing: border-box;
+  .firm {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.reviews__quote {
+  position: absolute;
+  top: -35px;
+  left: 25px;
+}
+
+.reviews__item_title {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.reviews__item_text {
+  line-height: 1.5;
+}
+
+.reviews__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.reviews__dots {
+  margin: 0 30px;
+  .slick-dots {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .reviews__slider {
+    margin-top: 30px;
+  }
+  .reviews__item {
+    min-height: 415px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reviews__item {
+    min-height: 370px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .reviews__slider {
+    margin-top: 10px;
+  }
+  .reviews__item {
+    min-height: auto;
+    padding-bottom: 0;
+    .firm {
+      position: inherit;
+      margin-top: 30px;
+    }
+  }
+  .reviews__navigation {
+    padding: 20px 0;
+  }
+}
+
+@import "firm/firm";
+
+/* ## Slider Reviews
+====================*/
+.reviews {
+  .slick-arrow {
+    position: inherit;
+    width: auto;
+    height: auto;
+  }
+}
+.reviews__slider {
+  .slick-list {
+    margin: 0 -15px;
+    padding-top: 35px;
+    overflow: initial;
+  }
+  .slick-slide {
+    padding: 0 18px;
+  }
+}

@@ -1,0 +1,105 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0);
+  z-index: 8888;
+  transition: background-color .3s;
+  &.active {
+    background-color: $white;
+    box-shadow: 4px 4px 24px rgba(2,2,2,.14);
+    .header__block {
+      padding: 10px 0;
+    }
+    .hamburger-line {
+      background-color: $black;
+    }
+    .logo-desktop {
+      display: none;
+    }
+    .logo-mobile {
+      display: block;
+    }
+    .navigation__list_item_link {
+      color: $black;
+    }
+    .header__phone {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .header__phone_number {
+      order: 2;
+    }
+    .header__phone_btn {
+      order: 1;
+      margin-right: 10px;
+      padding-top: 0;
+    }
+    .header__phone_mobile {
+      background-color: $black;
+    }
+  }
+  .logo-mobile {
+    display: none;
+  }
+}
+
+.header__block {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//@import "../hamburger/hamburger";
+
+@import "logo/logo";
+
+@import "navigation/navigation";
+
+@import "phone/phone";
+
+
+
+@media (max-width: 1199.98px) {
+  .header {
+    &.active {
+      .header__block {
+        padding: 5px 0;
+      }
+      .header__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .header__phone {
+        display: none;
+      }
+      .logo-desktop {
+        display: block;
+      }
+      .logo-mobile {
+        display: none;
+      }
+    }
+  }
+  .header__block {
+    padding: 5px 0;
+  }
+}
+
+//@media (max-width: 767.98px) {
+//  .header {
+//    &.active {
+//      .logo-desktop {
+//        display: block;
+//      }
+//      .logo-mobile {
+//        display: none;
+//      }
+//    }
+//  }
+//}

@@ -1,0 +1,33 @@
+.services {
+  padding: 100px 0 60px;
+  background-image: url('../../../img/services/services-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.services__title {
+  font-family: 'Akrobat-Bold', sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
+
+
+@media (max-width: 1199.98px) {
+  .services {
+    padding: 45px 0 30px;
+  }
+  .services__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services {
+    padding: 20px 0 80px;
+  }
+}
+
+@import "roadmap/roadmap";

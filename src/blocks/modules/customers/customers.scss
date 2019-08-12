@@ -1,0 +1,71 @@
+.customers {
+  position: relative;
+  padding: 80px 0 100px;
+  overflow-x: hidden;
+
+  .title-bg-text {
+    bottom: -10px;
+    font-size: 120px;
+  }
+
+  .title-2 {
+    text-transform: initial;
+  }
+}
+
+.customers__list {
+  margin-top: 60px;
+}
+
+.customers__item {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+//@media (min-width: 1199.98px) {
+//  .customers__list {
+//    display: flex;
+//    align-items: center;
+//    animation: customers 10s infinite linear;
+//    &:hover {
+//      animation: customers 10s infinite linear;
+//      animation-play-state: paused;
+//    }
+//    .customers__item {
+//      padding: 0 20px;
+//    }
+//  }
+//}
+//
+//@keyframes customers {
+//  from {
+//    transform: translateX(100%);
+//  }
+//  to {
+//    transform: translateX(-100%);
+//  }
+//}
+
+@media (max-width: 767.98px) {
+  .customers {
+    padding: 20px 0 70px;
+  }
+  .customers__list {
+    margin-top: 20px;
+  }
+}
+
+/* ## Slider Customers
+====================*/
+.customers__list {
+  &:hover {}
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-dots {
+    bottom: -40px;
+  }
+}

@@ -1,0 +1,56 @@
+<div class="tariff__block">
+
+    <ul class="tab tariff__tabs tariff__tab-1 wow slideInUp">
+        <li class="tariff__tabs_item">
+            <a href="#tariff-content-tab-1" data-target=".tariff__tab-1" class="tariff__tabs_item_link tabs-link">Сайт
+                визитка</a>
+        </li>
+        <li class="tariff__tabs_item">
+            <a href="#tariff-content-tab-2" data-target=".tariff__tab-1" class="tariff__tabs_item_link tabs-link">Интернет-магазин</a>
+        </li>
+        <li class="tariff__tabs_item">
+            <a href="#tariff-content-tab-3" data-target=".tariff__tab-1"
+               class="tariff__tabs_item_link tabs-link active">Landing
+                Page</a>
+        </li>
+        <li class="tariff__tabs_item">
+            <a href="#tariff-content-tab-4" data-target=".tariff__tab-1" class="tariff__tabs_item_link tabs-link">Корпоративный
+                сайт</a>
+        </li>
+        <li class="tariff__tabs_item">
+            <a href="#tariff-content-tab-5" data-target=".tariff__tab-1"
+               class="tariff__tabs_item_link tabs-link">Соцсеть</a>
+        </li>
+    </ul>
+
+    <div class="tariff__content tariff__tab-1" id="prices">
+
+        <div id="tariff-content-tab-1" class="tabs-content">
+            @@include("tab-content/cutaway/cutaway.html")
+        </div>
+        <!-- /.tabs-content -->
+
+        <div id="tariff-content-tab-2" class="tabs-content">
+            @@include("tab-content/store/store.html")
+        </div>
+        <!-- /.tabs-content -->
+
+        <div id="tariff-content-tab-3" class="tabs-content active">
+            @@include("tab-content/landing/landing.html")
+        </div>
+        <!-- /.tabs-content -->
+
+        <div id="tariff-content-tab-4" class="tabs-content">
+            @@include("tab-content/corporate/corporate.html")
+        </div>
+        <!-- /.tabs-content -->
+
+        <div id="tariff-content-tab-5" class="tabs-content">
+            @@include("tab-content/network/network.html")
+        </div>
+        <!-- /.tabs-content -->
+
+    </div>
+
+</div>
+<!-- /.tariff__block -->

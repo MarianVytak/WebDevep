@@ -1,0 +1,424 @@
+@media (max-width: 1199.98px) {
+  .roadmap {
+    max-width: 738px;
+    margin: 60px auto 0;
+  }
+  .roadmap__item {
+    width: 50%;
+    &:nth-child(2) {
+      &:before {
+        right: 25px;
+        display: block;
+      }
+      .roadmap__line {
+        width: 70%;
+        left: 0;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    &:nth-child(3) {
+      order: 4;
+      &:before {
+        display: none;
+      }
+      .roadmap__line {
+        width: 70%;
+        left: 0;
+        &:before {
+          display: none;
+        }
+        &:after {
+          left: -5px;
+          border-width: 5px 5px 5px 0;
+          border-color: transparent $grey transparent transparent;
+        }
+      }
+    }
+    &:nth-child(4) {
+      order: 3;
+      &:before {
+        display: block;
+        left: 25px;
+        transform: rotate(135deg);
+      }
+      .roadmap__line {
+        width: 70%;
+        left: auto;
+        right: 0;
+        &:before {
+          display: none;
+        }
+        &:after {
+          left: auto;
+          right: 0;
+          border-width: 5px 5px 5px 0;
+          border-color: transparent #fff transparent transparent;
+        }
+      }
+    }
+    &:nth-child(5) {
+      order: 7;
+      &:before {
+        display: block;
+        left: 25px;
+        transform: rotate(135deg);
+      }
+      .roadmap__line {
+        width: 70%;
+        left: auto;
+        right: 0;
+        &:before {
+          display: none;
+        }
+        &:after {
+          left: auto;
+          right: 0;
+          border-width: 5px 5px 5px 0;
+          border-color: transparent #fff transparent transparent;
+        }
+      }
+    }
+    &:nth-child(6) {
+      order: 8;
+      .roadmap__line {
+        width: 70%;
+        left: 0;
+        &:before {
+          display: none;
+        }
+        &:after {
+          left: -5px;
+          border-width: 5px 5px 5px 0;
+          border-color: transparent $grey transparent transparent;
+        }
+      }
+    }
+    &:nth-child(7) {
+      order: 6;
+      &:before {
+        display: block;
+        right: 25px;
+      }
+      .roadmap__line {
+        left: 0;
+        width: 70%;
+        &:before {
+          left: 0;
+          border-width: 5px 0 5px 5px;
+          border-color: transparent transparent transparent $white;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+    &:nth-child(8) {
+      order: 5;
+      .roadmap__line {
+        left: auto;
+        right: 0;
+        width: 70%;
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: block;
+        }
+      }
+    }
+    &:nth-child(9) {
+      .roadmap__line {
+        left: auto;
+        right: 0;
+        width: 70%;
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: block;
+        }
+      }
+    }
+    &:nth-child(10) {
+      &:before {
+        display: block;
+        right: 25px;
+      }
+      .roadmap__line {
+        left: 0;
+        width: 70%;
+        &:before {
+          left: 0;
+          border-width: 5px 0 5px 5px;
+          border-color: transparent transparent transparent $white;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+    &:nth-child(11) {
+      order: 12;
+      .roadmap__line {
+        width: 70%;
+        left: 0;
+        &:before {
+          display: none;
+        }
+        &:after {
+          left: -5px;
+          border-width: 5px 5px 5px 0;
+          border-color: transparent $grey transparent transparent;
+        }
+      }
+    }
+    &:nth-child(12) {
+      order: 11;
+      &:before {
+        left: 52px;
+        top: 89px;
+        transform: rotate(-135deg);
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 50%;
+        border: 10px solid $grey;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        z-index: 2;
+      }
+      &:after {
+        left: 52px;
+      }
+      .roadmap__line {
+        width: 70%;
+        left: auto;
+        right: 0;
+        &:before {
+          display: none;
+        }
+        &:after {
+          left: auto;
+          right: 0;
+          border-width: 5px 5px 5px 0;
+          border-color: transparent #fff transparent transparent;
+        }
+      }
+    }
+    &:nth-child(4n+4) {
+      .roadmap__comment {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:before {
+          left: 50%;
+          bottom: -8px;
+          transform: translateX(-50%) rotate(45deg);
+          border: none;
+          width: 16px;
+          height: 16px;
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .roadmap__comment {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:before {
+      left: 50%;
+      bottom: -8px;
+      transform: translateX(-50%) rotate(45deg);
+      border: none;
+      width: 16px;
+      height: 16px;
+      background-color: $white;
+    }
+  }
+  .roadmap__bag {
+    left: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .roadmap {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 40px;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 105px;
+      left: 0;
+      display: block;
+      width: 20px;
+      height: calc(100% - 135px);
+      background-color: $grey;
+    }
+  }
+  .roadmap__item {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    &:hover {
+      .roadmap__drop {
+        display: none;
+      }
+      .roadmap__comment {
+        display: none;
+      }
+      .roadmap__circle {
+        border-color: $white;
+        background-color: $grey;
+      }
+      .roadmap__item_label {
+        font-weight: 700;
+        font-size: 16px;
+        color: $black;
+      }
+    }
+    &:nth-child(2) {
+      &:before {
+        display: none;
+      }
+    }
+    &:nth-child(3) {
+      order: 3;
+    }
+    &:nth-child(4) {
+      order: 4;
+      &:before {
+        display: none;
+      }
+    }
+    &:nth-child(5) {
+      order: 8;
+      &:before {
+        display: none;
+      }
+      .roadmap__item_icon {
+        img {
+          margin: 0;
+        }
+      }
+    }
+    &:nth-child(6) {
+      order: 7;
+    }
+    &:nth-child(7) {
+      order: 6;
+      &:before {
+        display: none;
+      }
+      .roadmap__item_icon {
+        img {
+          margin: 0;
+        }
+      }
+    }
+    &:nth-child(8) {
+      order: 5;
+    }
+    &:nth-child(10) {
+      &:before {
+        display: none;
+      }
+    }
+    &:nth-child(11) {
+      order: 11;
+    }
+    &:nth-child(12) {
+      order: 12;
+      &:before {
+        top: auto;
+        bottom: -40px;
+        left: -40px;
+        transform: rotate(135deg);
+        width: 40px;
+        height: 40px;
+        border-width: 20px;
+      }
+      &:after {
+        left: calc(50% - 22px);
+        bottom: -70px;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &:nth-child(4n+4) {
+      .roadmap__comment {
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+  .roadmap__comment {
+    display: none;
+    position: inherit;
+    left: 0;
+    transform: none;
+    width: 100%;
+    &:before {
+      top: -8px;
+    }
+  }
+  .roadmap__line {
+    display: none;
+  }
+  .roadmap__circle {
+    top: 50%;
+    left: -33px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: $white;
+  }
+  .roadmap__bag {
+    left: 50%;
+    bottom: -155px;
+    transform: translateX(-50%);
+    padding-right: 40px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -56px;
+      left: 1px;
+      transform: translateX(-100%);
+      width: calc(50vw - 75px);
+      height: 20px;
+      background-color: $grey;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: -56px;
+      left: -6px;
+      transform: translateX(-50%) rotate(-45deg);
+      width: 40px;
+      height: 40px;
+      display: block;
+      border-radius: 50%;
+      border: 20px solid $grey;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+  .roadmap__item_icon {
+    width: 80px;
+    height: auto;
+  }
+  .roadmap__item_label {
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+}

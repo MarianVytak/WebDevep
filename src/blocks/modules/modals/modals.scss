@@ -1,0 +1,66 @@
+.modal {
+  display: none;
+  max-width: 600px;
+  background-image: url('../../../img/modals/modal-bg.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .form__control {
+    padding-left: 50px;
+  }
+  .input {
+    font-size: 24px;
+    &::placeholder {
+      font-size: 24px;
+    }
+  }
+  .input-icon {
+    img {
+      width: 75%;
+    }
+  }
+  .form__btn {
+    text-align: center;
+  }
+}
+
+.modal-title {
+  padding-bottom: 0.5em;
+  font-size: 36px;
+  color: $yellow;
+}
+
+.modal-subtitle {
+  padding-bottom: 0.5em;
+  font-size: 18px;
+  color: $white;
+}
+
+.fancybox-close-small {
+  svg {
+    path {
+      fill: $white;
+    }
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .modal {
+    padding: 30px 15px;
+    .input {
+      height: 50px;
+    }
+    .form__text {
+      font-size: 12px;
+    }
+  }
+  .modal-title {
+    font-size: 24px;
+  }
+  .modal-subtitle {
+    font-size: 16px;
+  }
+}

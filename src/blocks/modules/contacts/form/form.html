@@ -1,0 +1,56 @@
+<form id="contactsForm" class="contacts__form form" method="POST" action="/">
+
+    <div class="form__group wow slideInUp">
+        <div class="input-icon">
+            <img class="lazyload" data-src="../../../../img/icons/input-user.svg" alt="">
+        </div>
+        <input class="form__control input" type="text" name="input_name_contacts" placeholder="Ваше имя*" required autocomplete="off">
+    </div>
+
+    <div class="form__group wow slideInUp">
+        <div class="input-icon">
+            <img class="lazyload" data-src="../../../../img/icons/input-tel.svg" alt="">
+        </div>
+        <input class="form__control input input-tel" type="text" name="input_tel_contacts" placeholder="Телефон*">
+    </div>
+
+    <div class="form__group wow slideInUp">
+        <div class="input-icon">
+            <img class="lazyload" data-src="../../../../img/icons/input-email.svg" alt="">
+        </div>
+        <input class="form__control input" type="email" name="input_email_contacts" placeholder="E-mail" autocomplete="off">
+    </div>
+
+    <div class="form__group wow slideInUp">
+        <textarea class="form__control textarea" name="message_contacts" placeholder="Расскажите коротко о проекте"></textarea>
+    </div>
+
+    <div class="form__group wow slideInUp">
+        <div class="form__info form__text">
+            <span class="form__info_required">*</span>
+            Поля, обязательные для заполнения
+        </div>
+        <div class="form__accept">
+            <label class="check">
+                <input class="check__input" name="contacts_check_accept[]" type="checkbox" required checked>
+                <span class="check__box"></span>
+            </label>
+            <div class="form__text">
+                Отправляя сообщение, я принимаю
+                <a href="#" class="form__link">Пользовательское соглашение</a>
+                и согласен с
+                <a href="#" class="form__link">Политикой конфеденциальности</a>
+                данного сайта.
+            </div>
+        </div>
+    </div>
+
+    <div class="form__btn wow slideInUp">
+        <button type="submit" class="btn btn-lg btn-yellow" id="form_btn_contacts">
+            <img class="lazyload" data-src="../../../../img/icons/btn-icon-telegram-black.svg" alt="">
+            Отправить заявку
+        </button>
+    </div>
+
+</form>
+<!-- /.contacts__form -->

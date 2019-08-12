@@ -1,0 +1,32 @@
+.download__files {
+  margin-top: 20px;
+}
+
+.download__files_item {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.download__files_link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 2500;
+  &:hover {
+    .download__files_text {
+      text-decoration: underline;
+    }
+  }
+}
+
+.download__files_icon {
+  margin-right: 10px;
+}
+
+.download__files_text {
+  margin-left: 10px;
+  color: $black;
+}

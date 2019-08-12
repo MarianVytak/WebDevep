@@ -1,0 +1,25 @@
+# This is a sample build configuration for PHP.
+# Check our guides at https://confluence.atlassian.com/x/e8YWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:8.9.4
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: upload to server
+          script:
+            - apt-get update && apt-get install -y unzip git
+            - apt-get install git-ftp
+            - git config git-ftp.url ftp://$HOST:$FTP_PORT/dev.webdevep.ru/
+            - git config git-ftp.user $FTP_USERNAME
+            - git config git-ftp.password $FTP_PASSWORD
+            - git ftp push
+      - step:
+          name: build project
+          caches:
+            - node
+          script:
+            - ssh -o StrictHostKeyChecking=no -t $SSH_USERNAME@$HOST -p $SSH_PORT "cd $PROJECT_PATH; sh build.sh;"

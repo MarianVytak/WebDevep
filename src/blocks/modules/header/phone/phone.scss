@@ -1,0 +1,41 @@
+.header__phone_number_link {
+  font-family: 'Akrobat-Regular', sans-serif;
+  font-size: 24px;
+  color: $yellow;
+  line-height: 1;
+}
+
+.header__phone_btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+}
+
+.header__phone_mobile {
+  width: 60px;
+  height: 60px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+
+@media (max-width: 1199.98px) {
+  .header__phone {
+    display: none;
+  }
+  .header__phone_mobile {
+    display: flex;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+//@media (max-width: 767.98px) {
+//  .header__phone_mobile {
+//    width: 45px;
+//    height: 45px;
+//  }
+//}

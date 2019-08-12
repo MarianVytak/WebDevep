@@ -1,0 +1,68 @@
+.team__list {
+  margin-top: 60px;
+}
+
+.team__card {
+  outline: none;
+}
+
+.team__card_img {
+  display: block;
+  margin: 0 auto 45px;
+  border-radius: 50%;
+}
+
+.team__card_body {}
+
+.team__card_profession {
+  font-family: 'Akrobat-Regular', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.team__card_name {
+  font-family: 'Akrobat-ExtraBoldBold', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  .team__list {
+    margin-top: 35px;
+    padding: 0;
+  }
+  .team__card_img {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .team__list {
+    margin-top: 20px;
+  }
+}
+
+
+
+/* ## Slider Team
+====================*/
+.team__list {
+  .slick-arrow {
+    top: 40%;
+  }
+  .slick-dots {
+    bottom: -40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .team__list {
+    padding: 0 50px;
+    .slick-prev {
+      left: 40px;
+    }
+    .slick-next {
+      right: 40px;
+    }
+  }
+}

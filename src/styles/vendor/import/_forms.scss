@@ -1,0 +1,162 @@
+.form__group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form__control {
+  width: 100%;
+  padding-left: 60px;
+  border: none;
+  border-bottom: 2px solid rgba($white,.5);
+  outline: none;
+  background-color: transparent;
+  font-family: 'Akrobat-Light', sans-serif;
+  font-size: 36px;
+  color: $white;
+  box-sizing: border-box;
+  &::placeholder {
+    color: #c8ced9;
+  }
+}
+
+.input {
+  height: 70px;
+}
+
+.textarea {
+  height: 170px;
+  padding-top: 12px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.form__text {
+  font-weight: 300;
+  color: #a3a8b2;
+}
+
+.form__link {
+  color: #a3a8b2;
+  text-decoration: underline;
+}
+
+.form__info {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 25px;
+}
+
+.form__info_required {
+  position: absolute;
+  top: -5px;
+  left: 8px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.form__accept {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 25px;
+  .check {
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+}
+
+.form__btn {
+  margin-top: 30px;
+}
+
+// Checkbox
+.check__box {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: 1px solid $white;
+  box-sizing: border-box;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    display: none;
+    width: 17px;
+    height: 12px;
+    border: 3px solid transparent;
+    border-left-color: $white;
+    border-bottom-color: $white;
+    box-sizing: border-box;
+  }
+}
+.form__input_error + .check__box {
+  border-color: rgba(red,.5);
+}
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  &:checked + .check__box {
+    &:before {
+      display: block;
+    }
+  }
+  &:checked + .form__input_error + .check__box {
+    border-color: $white;
+    &:before {
+      display: block;
+    }
+  }
+}
+
+
+// Validation style
+.form__group {
+  label {
+    &.form__input_error {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: max-content;
+      font-size: 12px;
+    }
+  }
+  .check {
+    .form__input_error {
+      font-size: 0;
+    }
+  }
+}
+.form__input_error {
+  border-bottom-color: rgba(red,.5);
+  font-weight: 300;
+  color: #c8ced9;
+}
+
+
+@media (max-width: 767.98px) {
+  .form__control {
+    font-size: 30px;
+  }
+  .textarea {
+    padding-left: 0;
+  }
+  .form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

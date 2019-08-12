@@ -1,0 +1,58 @@
+<div class="modal modal-ordering">
+
+    <div class="modal-title">
+        Заказать
+    </div>
+
+    <div class="modal-subtitle">
+        Оставьте заявку и мы свяжемся с вами
+    </div>
+
+    <form id="orderingForm" class="form orderingForm" method="POST" action="/">
+
+        <div class="form__group">
+            <div class="input-icon">
+                <img src="../../../img/icons/input-user.svg" alt="">
+            </div>
+            <input class="form__control input" type="text" name="input_name_ordering" placeholder="Ваше имя*" required autocomplete="off">
+        </div>
+
+        <div class="form__group">
+            <div class="input-icon">
+                <img src="../../../img/icons/input-tel.svg" alt="">
+            </div>
+            <input class="form__control input input-tel" type="tel" name="input_tel_ordering" placeholder="Телефон*" required autocomplete="off">
+        </div>
+
+        <div class="form__group">
+            <div class="form__info form__text">
+                <span class="form__info_required">*</span>
+                Поля, обязательные для заполнения
+            </div>
+            <div class="form__accept">
+                <label class="check">
+                    <input class="check__input" name="call_check_accept[]" type="checkbox" checked required>
+                    <span class="check__box"></span>
+                </label>
+                <div class="form__text">
+                    Отправляя сообщение, я принимаю
+                    <a href="#" class="form__link">Пользовательское соглашение</a>
+                    и согласен с
+                    <a href="#" class="form__link">Политикой конфеденциальности</a>
+                    данного сайта.
+                </div>
+            </div>
+        </div>
+
+        <div class="form__btn">
+            <button type="submit" class="btn btn-lg btn-yellow">
+                <img src="../../../img/icons/btn-icon-telegram-black.svg" alt="">
+                Отправить заявку
+            </button>
+        </div>
+
+    </form>
+    <!-- /.contacts__form -->
+
+</div>
+<!-- /.modal-call -->
